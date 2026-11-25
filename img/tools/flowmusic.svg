@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Flow Music AI">
+  <rect width="64" height="64" rx="16" fill="#fbfbfa"/>
+  <g fill="#09090b">
+    <rect x="7.00" y="35.38" width="6.08" height="12.16" rx="3.04"/>
+    <rect x="15.78" y="25.24" width="6.08" height="22.30" rx="3.04"/>
+    <rect x="24.57" y="16.46" width="6.08" height="31.08" rx="3.04"/>
+    <rect x="33.35" y="20.51" width="6.08" height="27.03" rx="3.04"/>
+    <rect x="42.14" y="28.62" width="6.08" height="18.92" rx="3.04"/>
+    <rect x="50.92" y="37.41" width="6.08" height="10.14" rx="3.04"/>
+  </g>
+</svg>
