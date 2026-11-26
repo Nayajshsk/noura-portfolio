@@ -116,6 +116,12 @@ html.js .rv.in{opacity:1;transform:none}
 .hero .name{font-family:var(--f-name);font-weight:700;font-size:clamp(120px,19vw,300px);color:var(--wine);letter-spacing:0}
 .hero .sur{font-family:var(--f-name);font-weight:500;font-size:clamp(42px,5.6vw,88px);color:var(--ink)}
 .hero .tk{max-width:100%;box-sizing:border-box;flex-wrap:wrap;row-gap:2px;display:inline-flex;gap:12px;align-items:center;margin-top:22px;font-family:var(--f-display);font-weight:500;font-size:15px;color:var(--wine);transform:rotate(-2deg)}
+
+.hero .namerow{display:flex;align-items:center;gap:clamp(4px,1.2vw,18px);margin-top:18px}
+.hero .namerow .h1{flex:0 1 auto;min-width:0}
+.hero .avatar{flex:none;width:clamp(120px,15vw,250px);aspect-ratio:1;border-radius:50%;overflow:hidden;background:#FBF4F5;box-shadow:0 22px 40px -22px rgba(142,31,69,.5),0 0 0 6px rgba(255,255,255,.55);transform:rotate(4deg)}
+.hero .avatar video{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.12)}
+@media (max-width:640px){.hero .avatar{width:clamp(96px,27vw,130px)}.hero .name{font-size:clamp(96px,29vw,150px)}}
 .hero .lead{max-width:44ch;font-size:clamp(17px,1.35vw,20px);color:#4C3540;margin-top:22px}
 .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
 .note{font-family:var(--f-hand);font-size:24px;color:var(--rose);transform:rotate(-4deg);display:inline-block}
@@ -795,10 +801,13 @@ h1,h2,h3{font-family:var(--f-display);font-weight:700;letter-spacing:0}
   <section class="wrap hero" id="desk-hero">
     <div class="copy">
       <div class="eyebrow"><b>✿</b> مرحبًا، أنا</div>
-      <h2 class="h1" style="margin-top:18px" aria-label="نورة العتيبي">
+      <div class="namerow">
+      <h2 class="h1" aria-label="نورة العتيبي">
         <span class="ln"><span class="name">نورة</span></span>
         <span class="ln"><span class="sur">العتيبي</span></span>
       </h2>
+      <div class="avatar" aria-hidden="true"><video src="videos/naya-loop.mp4" poster="img/naya-loop.jpg" autoplay muted loop playsinline preload="auto"></video></div>
+      </div>
       <div class="ticket tk">مصممة جرافيك أول <span style="opacity:.5">·</span> مدرّبة في منصة نمكّن</div>
       <p class="lead">أحوّل الأفكار والمحتوى الخام إلى هويات وحملات ومطبوعات وعروض تقديمية بالموشن، وأصنع أفلامًا ومحتوى بصريًا بالذكاء الاصطناعي.</p>
       <div class="cta"><a class="btn pri" href="#work">استعراض الأعمال</a><a class="btn ghost" href="#about">نبذة عنّي</a></div>
